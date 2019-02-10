@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="compile"> 
 	
-	<property name="src.java.dir" location="./src/main/java/converter"/>
-	<property name="src.test.dir" location="./src/main/test"/>
+	<property name="src.java.dir" location=".src\printing\printing.java"/>
+	<property name="src.test.dir" location=".src\printing\test.java"/>
 	<property name="result.dir" location="./target"/>
 	<property name="result.javaclasses.dir" location="${result.dir}/classes"/>
 	<property name="result.testclasses.dir" location="${result.dir}/testclasses"/>
