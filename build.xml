@@ -1,25 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="compile"> 
 	
-	<property name="src.java.dir" location=".src\printing\printing.java"/>
-	<property name="src.test.dir" location=".src\printing\test.java"/>
+	<property name="src.java.dir" location=".src\printing"/>
+	
 	<property name="result.dir" location="./target"/>
-	<property name="result.javaclasses.dir" location="${result.dir}/classes"/>
-	<property name="result.testclasses.dir" location="${result.dir}/testclasses"/>
-	<property name="result.jar.file" location="./MyProduct.jar"/>
+	
+	
 
 	<target name="compile">
-		<mkdir dir="${result.javaclasses.dir}"/>
-		<javac srcdir="${src.java.dir}" destdir="${result.javaclasses.dir}" debug="true"  includeantruntime="false">
+		<mkdir dir="${result.dir}"/>
+		<javac srcdir="${src.java.dir}" destdir="${result.dir}" debug="true"  includeantruntime="false">
 		</javac>
 	</target>
 	
-	<!-- Comment Make jar or executable product -->
-	<target name="jar" depends="compile">
-		<jar destfile="${result.jar.file}">
-			<fileset dir="${result.javaclasses.dir}">
-            </fileset>
-		</jar>	
-	</target>
+	
+	
+	
 		
 </project>
