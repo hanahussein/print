@@ -9,7 +9,7 @@
 
 	<target name="compile">
 		<mkdir dir="${result.dir}"/>
-		<javac srcdir="${src.java.dir}" destdir="${result.dir}" debug="true"  includeantruntime="false">
+		<javac srcdir="${src.java.dir}"  debug="true"  includeantruntime="false">
 		</javac>
 	</target>
 	
